@@ -3,7 +3,7 @@
 ####Trying to simplify One File Explanation of React Redux.
 This is the minimal example i have seen.
 
-( This could help in a realtime interview, cut an paste, and do the react redux exercise, 
+( This could help in a realtime interview, clone, cut and paste, npm install, and do the react redux exercise, 
 
 showing that you manage the concepts, fast, clear.. or not so.
 

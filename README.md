@@ -9,13 +9,13 @@ showing that you manage the concepts, fast, clear.. or not so.
 
 Changing this code, 
 
-adding inputs in the form, or adding another form, "connecting it with the redux store" 
+Adding inputs in the form, or adding another form (jsx, React.Component), "connecting it with the redux store" 
 
-and changing the view, or adding another views "connecting it with the redux store", 
+Changing the view, or adding another views (jsx, React.Component) "connecting it with the redux store", 
 
-and making more actions, will help you show faster your understanding of react redux.
+Making more actions, will help you show faster your understanding of react redux.
 
-And you can show how to make many differents redux stores, 
+Show how to make many differents redux stores, 
 for a partition of your busness data layer in this presentation layer.
 
 - Later you talk about Hierarchy of the filesystem, were you will write down your .js files ('like unix man hier') when you have many business logic accions. 

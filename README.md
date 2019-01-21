@@ -1,6 +1,6 @@
 ---
 
-####Trying to simplify One File Explanation of React Redux.
+####Trying to simplify One File Source Code Explanation of React Redux.
 This is the minimal example i have seen.
 
 >React Redux, 'there is nothing new under the sun', i had an interview, i didn't know react redux at the time, i clearly sed that. So i Solved an exercise without react redux. I just write down vanilla javascript ES6, class, view, model, controller, html css. So, when the interview finished, i started searching, reading blogs, three days later.. here you have, react redux, it's not so complex. So Developers, 'there is nothing new under the sun', if you manage design patterns have a day with this, and there is it running. )
@@ -34,7 +34,7 @@ for a partition of your busness data layer in this presentation layer.
 
 ---
 
-The environment runs with, editor vscode, and docker-compose just to use it.
+I run the environment with, editor vscode, docker-compose just to use it.
 And we can change the code, and see changes on runtime.
 
 ```bash

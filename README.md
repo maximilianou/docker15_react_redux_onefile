@@ -1,16 +1,37 @@
 ---
 
+Trying to simplify One File Explanation of React Redux, in the minimal example possible i have seen.
+
+( This could help in a realtime interview, cut an paste, and do the react redux exersice, showing that you manage the concepts, fast, clear.. or not so.
+Changing this code, adding inputs in the form, or another form, and changing the view, or adding more views, and making more actions, will help you show faster your understanding or react redux. 
+Later you talk about Hierarchy of the filesystem when you have many business logic accions. )
+
 ---
 
+The environment runs with, editor vscode, and docker-compose just to use it.
+And we can change the code, and see changes on runtime.
+
+```bash
+code . 
+
+docker-compose up
 ```
 
-// components/App.js
-import React from "react";
-import { connect } from "react-redux";
-import '../App.css';
+---
+
+```javascript
+
+// index.js, react redux, onefile flatting explanation.
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import { Provider, connect } from "react-redux";
+import './App.css';
 import uuidv1 from "uuid";
 import { createStore } from 'redux'; 
-////////////////////////////////////////
+//// Route (business logic) actions, with tipified constant Names.
+//// To change de state of the Global store App
 const ADD_ARTICLE = "ADD_ARTICLE";
 const initialState = {
   articles: []
@@ -23,9 +44,12 @@ const rootReducer = (state = initialState, action) => {
       return state;
   }
 };
-/////////////////////////////////////////
+//// Create an "Input Form React Component", connected with redux store state.
+//// Write down the html view of this component.
+//// Write down the handlers in javascript methods, for dom events. 
+//// Connect the dom events handlers in the html view.
+//// Dispatch de state of the Component, to the redux (global) store.
 const store = createStore(rootReducer);
-
 const addArticle = article => ({
   type: ADD_ARTICLE,
   payload: article
@@ -58,17 +82,17 @@ class ConnectedForm extends React.Component {
     const { title } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
-        <div className="form-group">
+        <div className="">
           <label htmlFor="title">Title</label>
           <input
             type="text"
-            className="form-control"
+            className=""
             id="title"
             value={title}
             onChange={this.handleChange}
           />
         </div>
-        <button type="submit" className="btn btn-success btn-lg">
+        <button type="submit" className="">
           SAVE
         </button>
       </form>
@@ -76,21 +100,23 @@ class ConnectedForm extends React.Component {
   }
 }
 const Form = connect(null, mapDispatchToProps)(ConnectedForm);
-////////////////////////////////////
+//// Create a Function with de html view in jsx from react, 
+//// And connect the state properties to the redux store
+//// Like an observer/observable, from general design patterns.
 const mapStateToProps = state => {
   return { articles: state.articles };
 };
 const ConnectedList = ({ articles }) => (
-  <ul className="list-group list-group-flush">
+  <ul className="">
     {articles.map(el => (
-      <li className="list-group-item" key={el.id}>
+      <li className="" key={el.id}>
         {el.title}
       </li>
     ))}
   </ul>
 );
 const List = connect(mapStateToProps)(ConnectedList);
-///////////////////////////////////////
+//// Create de view in jsx, width html and React Component of the Application
 const App = () => (
   <div className="App">
     <div className="App-header">
@@ -103,8 +129,22 @@ const App = () => (
     </div>
   </div>
 );
-export { App, store };
+//// Making the action of rendering the final DOM in html, in 'index.html'->'div#app'
+//// we have to connect the Global Redux store of the Rreact App, 
+////       with the Provider react-redux Component
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.querySelector("#app")
+);
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
 
 ```
+
+---
 
 

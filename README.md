@@ -2,9 +2,10 @@
 
 Trying to simplify One File Explanation of React Redux, in the minimal example possible i have seen.
 
-( This could help in a realtime interview, cut an paste, and do the react redux exersice, showing that you manage the concepts, fast, clear.. or not so.
-Changing this code, adding inputs in the form, or another form, and changing the view, or adding more views, and making more actions, will help you show faster your understanding or react redux. 
-Later you talk about Hierarchy of the filesystem when you have many business logic accions. )
+( This could help in a realtime interview, cut an paste, and do the react redux exercise, showing that you manage the concepts, fast, clear.. or not so.
+Changing this code, adding inputs in the form, or another form, "connecting it with the redux store" and changing the view, or adding more views "connecting it with the redux store", and making more actions, will help you show faster your understanding or react redux.
+And you can show how to make more redux stores.
+- Later you talk about Hierarchy of the filesystem ('like unix man hier') when you have many business logic accions. )
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 ####Trying to simplify One File Explanation of React Redux.
-Witn the minimal example possible i have seen.
+This is the minimal example i have seen.
 
 ( This could help in a realtime interview, cut an paste, and do the react redux exercise, showing that you manage the concepts, fast, clear.. or not so.
 Changing this code, adding inputs in the form, or adding another form, "connecting it with the redux store" and changing the view, or adding another views "connecting it with the redux store", and making more actions, will help you show faster your understanding or react redux.

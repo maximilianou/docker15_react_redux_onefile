@@ -3,6 +3,8 @@
 ####Trying to simplify One File Explanation of React Redux.
 This is the minimal example i have seen.
 
+>React Redux, "there is nothing new under the sun", i had an interview, i didn't know react redux at the time, i clearly sed that. So i Solved an exercise without react redux. I just write down vanilla javascript ES6, class, view, model, controller, html css. So, when the interview finished, i started searching, reading blogs, three days later.. here you have, react redux, it's not so complex. So Developers, "there is nothing new under the sun", if you manage design patterns have a day with this, and there is it running. )
+
 ( This could help in a realtime interview, clone, cut and paste, npm install, and do the react redux exercise, 
 
 showing that you manage the concepts, fast, clear.. or not so.
